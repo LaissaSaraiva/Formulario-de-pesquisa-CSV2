@@ -9,30 +9,105 @@
 <body>
 
     <div>
-        <h1>Formulário de Pesquisa freeCode Camp</h1>
+        <h1>Formulário de Pesquisa Mulheres em Tech</h1>
         <p>Obrigada por nos ajudar a melhorar a plataforma </p>
     </div>
 
     <form>
-        <label>Nome</label>
-        <input>
 
-        <label>Email</label>
-        <input>
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome"/>
+        </div>
 
-        <label>Idade (opcional)</label>
-        <input>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email"/>
+        </div>
 
-        <label>Qual opção melhor descreve sua função atual?</label>
-        <input>
+        <div>
+            <label for="idade">Idade(opcional)</label>
+            <input type="number" id="idade"/>
+        </div>
 
-        <label>Você recomendaria a freeCode Camp para um amigo?</label>
-        <input>
+        <div>
+            <label for="situacao-atual">Qual opção melhor descreve sua função atual?</label>
+            <select id="situacao-atual">
+                <optgroup label="Selecione sua situação atual">
+                    <option>Estudante</option>
+                    <option>Estagiário(a)</option>
+                    <option>Contratado</option>
+                    <option>Prefiro não dizer</option>
+                    <option>Outros</option>     
+                </optgroup>
+            </select>
+        </div>
 
-        <label>Idade (opcional)</label>
-        <input>
+       <div>
+        <p>Você recomendaria a Mulheres em Tech para um amigo(a)?</p>
 
-        <button>Submit</button>
+        <input type="radio" id="sim" name="recomendacao" checked/>
+        <label for="sim">Com certeza</label>
+
+        <input type="radio" id="talvez" name="recomendacao"/>
+        <label for="talvez">Talvez</label>
+
+        <input type="radio" id="nao" name="recomendacao"/>
+        <label for="nao">Não tenho certeza</label>
+       </div>
+
+       <div>
+            <label for="funcionalidade">Qual a sua funcionalidade favorita do Mulheres em Tech?</label>
+            <select id="funcionalidade">
+                <optgroup label="Selecione uma opção">
+                    <option>Desafios</option>
+                    <option>Projetos</option>
+                    <option>Comunidade</option>
+                    <option>Open Source</option>
+                </optgroup>
+            </select>
+       </div>
+
+       <div>
+        <p>O que você gostaria de ver melhorado?<small>(Selecione todas que se aplicam)</small></p>
+        
+        <input type="checkbox" id="fontend"/>
+        <label for="fontend">Projetos de Front-end</label><br>
+
+        <input type="checkbox" id="backend"/>
+        <label for="backend">Projetos de Back-end</label><br>    
+
+        <input type="checkbox" id="dados"/>
+        <label for="dados">Análise de Dados</label><br>
+
+        <input type="checkbox" id="desafios"/>
+        <label for="desafios">Desafios</label><br>
+
+        <input type="checkbox" id="comunidade-op"/>
+        <label for="comunidade-op">Comunidade Open Source</label><br>
+
+        <input type="checkbox" id="videos"/>
+        <label for="videos">Videos</label><br>
+
+        <input type="checkbox" id="meetup"/>
+        <label for="meetup">Meetups nas Cidades</label><br>
+       
+        <input type="checkbox" id="forum"/>
+        <label for="forum">Fórum</label><br>
+
+        <input type="checkbox" id="mais-cursos"/>
+        <label for="mais-cursos">Cursos Adicionais</label><br>
+       </div>
+
+       <div>
+           <label for="sugestao">Algum comentário ou sugestão?</label>
+           <textarea id="sugestao" name="sugestao"></textarea>
+       </div>
+
+       <div>
+           <button>Submit</button>
+       </div>   
+       
     </form>
     
 </body>
