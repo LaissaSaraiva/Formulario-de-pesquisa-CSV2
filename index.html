@@ -28,7 +28,7 @@
             </div>
 
             <div class="form">
-                <label for="idade">Idade(opcional)</label><br>
+                <label for="idade">Idade <small>(opcional)</small></label><br>
                 <input type="number" id="idade" placeholder="Digite sua idade"/>
             </div>
 
@@ -45,17 +45,17 @@
                 </select>
             </div>
 
-        <div class="form">
+        <div class="form" class="recomendacao">
             <p>Você recomendaria a Mulheres em Tech para um amigo(a)?</p>
 
             <input type="radio" id="sim" name="recomendacao" checked/>
-            <label for="sim">Com certeza</label>
+            <label for="sim">Com certeza</label><br>
 
             <input type="radio" id="talvez" name="recomendacao"/>
-            <label for="talvez">Talvez</label>
+            <label for="talvez">Talvez</label><br>
 
             <input type="radio" id="nao" name="recomendacao"/>
-            <label for="nao">Não tenho certeza</label>
+            <label for="nao">Não tenho certeza</label><br>
         </div>
 
         <div class="form">
@@ -103,11 +103,11 @@
 
         <div class="form">
             <label for="sugestao">Algum comentário ou sugestão?</label>
-            <textarea id="sugestao" name="sugestao"></textarea>
+            <textarea id="sugestao" name="sugestao" placeholder="Digite seu comentário aqui..."></textarea>
         </div>
 
-        <div class="botao">
-            <button>Enviar</button>
+        <div class="botao" class="form">
+            <button type="button">Enviar</button>
         </div>   
         
         </form>
