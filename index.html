@@ -19,24 +19,24 @@
 
             <div class="form">
                 <label for="nome">Nome</label><br>
-                <input type="text" id="nome" placeholder="Digite seu nome"/>
+                <input type="text" id="nome" placeholder="Digite seu nome" required/>
             </div>
 
             <div class="form">
                 <label for="email">Email</label><br>
-                <input type="email" id="email" placeholder="Digite seu email"/>
+                <input type="email" id="email" placeholder="Digite seu email" required/>
             </div>
 
             <div class="form">
                 <label for="idade">Idade <small>(opcional)</small></label><br>
-                <input type="number" id="idade" placeholder="Digite sua idade"/>
+                <input type="number" id="idade" placeholder="Digite sua idade" required/>
             </div>
 
             <div class="form">
                 <label for="situacao-atual">Qual opção melhor descreve sua função atual?</label><br>
                 <select id="situacao-atual">
                     <optgroup label="Selecione sua situação atual">
-                        <option >Estudante</option>
+                        <option>Estudante</option>
                         <option>Estagiário(a)</option>
                         <option>Contratado</option>
                         <option>Prefiro não dizer</option>
@@ -61,7 +61,8 @@
         <div class="form">
                 <label for="funcionalidade">Qual a sua funcionalidade favorita do Mulheres em Tech?</label><br>
                 <select id="funcionalidade">
-                    <optgroup label="Selecione uma opção">
+                    <option disabled selected>Selecione uma opção</option>
+                    <optgroup label="Funcionalidades">
                         <option>Desafios</option>
                         <option>Projetos</option>
                         <option>Comunidade</option>
@@ -106,8 +107,9 @@
             <textarea id="sugestao" name="sugestao" placeholder="Digite seu comentário aqui..."></textarea>
         </div>
 
+
         <div class="botao" class="form">
-            <button type="button">Enviar</button>
+            <button type="submit" onclick="alert('Obrigada pela visita! =D')">Enviar</button>
         </div>   
         
         </form>
