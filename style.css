@@ -25,6 +25,7 @@ body {
     margin-bottom: 40px;
     color: aliceblue;
     text-shadow: 2px 3px 3px #420742;
+
   
 }
 
@@ -34,7 +35,6 @@ body {
     margin: 0px 180px 0 180px;
     border-radius: 5px;
     color:aliceblue;
-    font-size: 18px;
     text-shadow: 2px 2px 3px #310731;
 }
 
@@ -60,24 +60,29 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus,
     border: 2px solid;
 }
 
-input::placeholder, optgroup, option {
+input::placeholder, optgroup, option{
     padding: 12px;
-    font-size: 17px;
+   
 
 }
 
 textarea {
-    padding: 12px;
-    height: 80px;
+    display: inline-block;
     font-family: 'Poppins';
-    font-size: 17px;
-    resize: none;  
+    padding: 12px;
+    resize: none;
+    box-sizing: border-box;
+    height: 80px;
+  
 }
 
-
+.botao {
+    text-align: center;
+    
+ 
+}
 
 button{
-    width: 100%;
     border: none;
     border-radius: 8px;
     padding: 15px 0; 
@@ -88,10 +93,30 @@ button{
     color: aliceblue;
     font-weight: bold;
     background-color: #190740;
+    box-sizing: border-box;
+    width: 95%;
+ 
+    
    
 }
 
 button:hover{
     background-color: #290872;
 
+}
+
+
+@media screen and (max-width: 820px) {
+ 
+#cabecalho {
+    font-size: smaller;
+ }
+
+#formulario {
+    background-color: rgba(7,31,91, 0.5);
+    padding: 10px 10px;
+    margin: 0px 30px;
+    font-size: 1em;
+    text-shadow: 2px 2px 3px #310731;
+  }
 }
